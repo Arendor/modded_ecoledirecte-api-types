@@ -22,25 +22,42 @@ export const Routes = {
 		return "/v3/login.awp";
 	},
 
+	/**
+	 * Route for:
+	 * - POST /v3/connexion/doubleauth.awp?verbe=get&v=4.56.0
+	 */
+	getA2FQCM(): string {
+		return "/v3/connexion/doubleauth.awp?verbe=get&v=4.56.0"
+	},
+
+	/**
+	 * Route for:
+	 * - POST v3/connexion/doubleauth.awp?verbe=post&v=4.56.0
+	 */
+	postA2FRes(): string {
+		return "v3/connexion/doubleauth.awp?verbe=post&v=4.56.0"
+	},
+
+
 	//! TEACHER
 	/**
 	 * Use with `root2`!
 	 *
 	 * Route for:
-	 * - POST *p/v3/niveauxListe.awp?verbe=get&v=4.14.7
+	 * - POST *p/v3/niveauxListe.awp?verbe=get&v=4.56.0
 	 */
 	teacherSchools(): string {
-		return "/v3/niveauxListe.awp?verbe=get&v=4.14.7";
+		return "/v3/niveauxListe.awp?verbe=get&v=4.56.0";
 	},
 
 	/**
 	 * Use with `root2`!
 	 *
 	 * Route for:
-	 * - POST *p/v3/classes/{classId}/eleves.awp?verbe=get&v=4.14.7
+	 * - POST *p/v3/classes/{classId}/eleves.awp?verbe=get&v=4.56.0
 	 */
 	teacherStudents(classId: number): string {
-		return `/v3/classes/${classId}/eleves.awp?verbe=get&v=4.14.7`;
+		return `/v3/classes/${classId}/eleves.awp?verbe=get&v=4.56.0`;
 	},
 
 	//! STUDENT
@@ -209,7 +226,7 @@ export const Routes = {
 	 * - POST /v3/comptes/detail.awp
 	 */
 	studentWallets(): string {
-		return "/v3/comptes/detail.awp?verbe=get&v=4.14.3";
+		return "/v3/comptes/detail.awp?verbe=get&v=4.56.0";
 	},
 
 	/**
