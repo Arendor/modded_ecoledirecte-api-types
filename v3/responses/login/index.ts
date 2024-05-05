@@ -17,7 +17,7 @@ export type A2FQCM = {
     code: 200,
     data: {
 		question: base64, 
-        propositions: base64[]
+        propositions: Array<base64>
     },
     message: null, // ???
     host: "HTTP<n° serveur>"

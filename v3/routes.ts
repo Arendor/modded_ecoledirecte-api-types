@@ -35,7 +35,7 @@ export const Routes = {
 	 * - POST v3/connexion/doubleauth.awp?verbe=post&v=4.56.0
 	 */
 	postA2FRes(): string {
-		return "v3/connexion/doubleauth.awp?verbe=post&v=4.56.0"
+		return "/v3/connexion/doubleauth.awp?verbe=post&v=4.56.0"
 	},
 
 
